@@ -1,122 +1,113 @@
-# Star Cement Limited — DCF Valuation & Equity Research Model
+# Star Cement Limited — Equity Research Report & DCF Valuation
 
-A full equity research build-out on **Star Cement Limited** (NSE: `STARCEMENT` | BSE: `540575` | ISIN: `INE460H01021`), covering a 3-statement forecast, DCF valuation, peer comparables, and a daily market-tracking report.
-
-> **Disclaimer:** This repository is prepared solely for educational and academic purposes as part of a financial modelling exercise. It does not constitute investment advice. All projections and valuations are the output of a modelling exercise built on publicly available data (company filings, Yahoo Finance, industry reports) and should not be relied upon for investment decisions. Consult a SEBI-registered investment advisor before acting on any information here.
+**Sector:** Materials — Cement & Cement Products | **Exchange:** NSE: `STARCEMENT` | BSE: `540575` | **Program Status:** Financial Modelling Project
 
 ---
 
-## 📁 Repository Structure
+## 🏢 About the Company
 
-```
-star-cement-valuation/
-│
-├── Annual Reports/                          # Source filings used to build the model
-│
-├── Management report -2024-25.pdf           # FY2024-25 management discussion & analysis
-├── Star-Cement_IP_Q4_FY26_Final.pdf         # Q4 FY26 Investor Presentation
-│
-├── Star Cements.xlsx                        # Core financial model (DCF, comps, WACC, ratios)
-├── Star_Cement_Weekly_Returns.xlsx          # Weekly stock return tracking sheet
-│
-├── Star_Cement_Daily_Analysis_Report.pdf    # Daily analysis report (company, valuation, price action)
-│
-└── README.md
-```
+Star Cement Limited (formerly Cement Manufacturing Company Limited, renamed in 2016) is the **largest cement manufacturer in North East India**, founded in 2001 and promoted by the Bhajanka family (Century Plyboards group).
+
+- Integrated plant at **Lumshnong, Meghalaya**, with grinding units serving the North-East, West Bengal and Bihar
+- Product range across **OPC, PPC, PSC and value-added cement variants**
+- Capacity expansion underway: **9.7 MTPA → 16.7 MTPA by FY29** via new Bihar, Nihmbol (Meghalaya) and Haryana units
+- Backed by an attractive **capital-subsidy regime** (150–200% of investments receivable over 15–20 years)
+- Listed on both the **NSE and BSE**
 
 ---
 
-## 📊 `Star Cements.xlsx` — Model Structure
+## 📑 Report Highlights
 
-The workbook is organised into 12 linked sheets, indexed on the first tab (`Index`):
-
-| # | Sheet | Description | Purpose |
-|---|-------|-------------|---------|
-| 1 | **Assumptions** | Company overview, key operating/DCF assumptions, valuation output summary | Starting point / control panel |
-| 2 | **Historical** | 5-year audited financials, FY2022–FY2026 | Base data |
-| 3 | **Model** | Integrated 3-statement forecast, FY2027–FY2036 | Core model |
-| 4 | **Ratio Analysis** | Historical + forecast ratio dashboard (profitability, liquidity, leverage, efficiency) | Performance metrics |
-| 5 | **Scenario Analysis** | Base / Bull / Bear revenue-growth scenarios and resulting DCF outputs | Sensitivity |
-| 6 | **Comps** | Peer trading comparables (EV/Sales, EV/EBITDA, P/E) | Relative valuation |
-| 7 | **Comp Data** | Raw financial data for the 12-peer cement universe | Source for Comps |
-| 8 | **WACC** | Cost of equity (CAPM) and cost of debt build | Discount rate |
-| 9 | **Beta** | Regression-based beta derivation vs. peer set | Beta input to WACC |
-| 10 | **Market Data** | CMP, market capitalisation, peer share prices | Market reference |
-| 11 | **Football Field Analysis** | Valuation range across all methodologies | Summary visual |
-
-### Key Model Assumptions
-- **Forecast horizon:** FY2027–FY2036 (10-year explicit period)
-- **Revenue growth (Base Case):** 13.00% in FY2027, tapering 10% p.a. to ~5% by FY2036
-- **COGS:** 15.56% of revenue (3-yr historical average)
-- **Depreciation:** 15.22% of opening PP&E, stepped up 2.00% every 3 years from FY2030
-- **Capex:** Scaled to the capacity-expansion plan (9.7 → 16.7 MTPA by FY29) — peaks at 28.23% of revenue in FY2028, tapering to ~2.93% by FY2036
-- **Working capital:** DSO 18.17 days · DIO 257.09 days · DPO 165.81 days (net CCC ≈ +109 days, reflecting cement-industry raw-material stockpiling)
-- **Debt:** Frozen at ₹493.19 Cr (FY2026 level) through the forecast; no new borrowings assumed
-- **Tax rate:** Starts at 25.56%, stepped up 0.50% every two years to 28.06% by FY2036
-
-### WACC Build
-| Component | Value |
+| Section | Details |
 |---|---|
-| Risk-Free Rate (10-yr G-Sec) | 7.03% |
-| Equity Risk Premium | 4.53% |
-| Levered Beta (peer-average unlevered, re-levered) | 1.02x |
-| Cost of Equity (CAPM) | 11.66% |
-| Pre-Tax Cost of Debt | 5.79% |
-| After-Tax Cost of Debt | 4.31% |
-| **WACC** | **10.73%** |
+| 🏢 Company Overview | Business model, plant footprint, capacity expansion strategy |
+| 📊 Financial Analysis | Revenue, EBITDA, PAT — FY2022 to FY2026 |
+| 👥 Shareholding Pattern | Promoter, FII, MF, Bodies Corporate, Retail breakdown |
+| 🔍 Peer Comparison | vs UltraTech, Grasim, Ambuja, Shree Cement, Dalmia Bharat, ACC & 6 more |
+| 💹 DCF Valuation | 10-year projections + Blended Terminal Value |
+| 📈 Price Action | NSE/BSE price data, volume, 52W range, analyst target |
 
-### Terminal Value & Output
-| Metric | Value |
+---
+
+## 💰 DCF Model — Key Assumptions
+
+| Parameter | Value |
 |---|---|
-| Terminal Growth Rate (Gordon Growth) | 4.00% |
-| EV/EBITDA Exit Multiple | 15.43x (avg. of 8 large-cap peers) |
-| Terminal Value — GGM (FY2036, undiscounted) | ₹21,644.38 Cr |
-| Terminal Value — EV/EBITDA (FY2036, undiscounted) | ₹30,455.03 Cr |
-| Blended Terminal Value | ₹26,049.71 Cr |
-| Enterprise Value (DCF) | ₹11,332.52 Cr |
-| Equity Value (DCF) | ₹11,115.39 Cr |
+| Discount Rate (WACC) | 10.73% |
+| Tax Rate | 25.56% |
+| Perpetual Growth Rate | 4.00% |
+| EV/EBITDA Exit Multiple | 15.43x |
+| Projection Period | FY2027 – FY2036 |
+| Shares Outstanding | 40.42 Crores |
+
+---
+
+## 📈 Financial Snapshot (₹ in Crores)
+
+| Metric | FY2022 | FY2023 | FY2024 | FY2025 | FY2026 |
+|---|---|---|---|---|---|
+| Revenue | 2,255.19 | 2,756.93 | 2,937.13 | 3,173.96 | 3,795.75 |
+| EBITDA | 378.62 | 520.47 | 582.78 | 589.21 | 955.21 |
+| Net Profit | 246.77 | 247.60 | 295.11 | 168.82 | 413.10 |
+| Total Assets | 2,745.09 | 3,131.40 | 3,602.37 | 4,106.85 | 4,646.86 |
+| Total Debt | 8.01 | 4.84 | 72.10 | 292.73 | 493.19 |
+
+**Revenue CAGR (FY22–FY26):** ~13.9% | **EBITDA Margin (FY26):** ~25.2% | **RoE:** ~12.9% | **RoCE:** ~16.0%
+
+---
+
+## 🎯 Valuation Summary
+
+| Method | Implied Terminal Value |
+|---|---|
+| Terminal Value — EV/EBITDA Method | ~₹30,455.03 Cr |
+| Terminal Value — Gordon Growth Method | ~₹21,644.38 Cr |
+| Blended Average Terminal Value | ~₹26,049.71 Cr |
+| **Enterprise Value (DCF, discounted)** | **~₹11,332.52 Cr** |
+| **Equity Value (DCF)** | **~₹11,115.39 Cr** |
 | **Intrinsic Value per Share** | **₹275.99** |
-| Current Market Price (as of 10 Aug 2026) | ₹198.94 |
-| Implied Upside | **+38.7%** |
-| Recommendation | **BUY** |
-
-### Peer Set (Comps)
-UltraTech Cement, Grasim Industries, Ambuja Cements, Shree Cement, J K Cements, Dalmia Bharat, ACC, The Ramco Cement, JSW Cement, Nuvoco Vistas, India Cements, JK Lakshmi Cement.
+| **Recommendation** | **BUY (+38.7% upside)** |
 
 ---
 
-## 📄 `Star_Cement_Daily_Analysis_Report.pdf`
+## 📉 Current Market Data (as of 10 August 2026)
 
-A daily-format research note summarising:
-- Company overview and North-East India expansion strategy
-- 5-year historical financials and key ratios (P/E, EV/EBITDA, RoE, RoCE)
-- Shareholding pattern (promoter/public/institutional split)
-- Peer valuation comparison
-- Full DCF walkthrough and scenario analysis
-- Price action snapshot (LTP, day/52-week range, volume, analyst target)
-
----
-
-## 📈 `Star_Cement_Weekly_Returns.xlsx`
-
-Tracks weekly stock price returns for STARCEMENT, used to monitor actual price performance against the DCF-implied intrinsic value and analyst targets over time.
+| Parameter | Value |
+|---|---|
+| LTP | ₹198.94 |
+| 52-Week High / Low | ₹308.95 / ₹196.50 |
+| Market Capitalisation | ~₹8,040.8 Cr |
+| Avg Daily Volume (NSE) | ~3,02,090 shares |
+| P/E Ratio (TTM) | 21.74x |
+| 1-Year Analyst Target | ₹279.00 |
 
 ---
 
-## 🗂 `Annual Reports/`
+## 🔬 Methodology
 
-Source filings (annual reports, investor presentations) used as the primary data inputs for the Historical sheet and Assumptions build.
-
----
-
-## Methodology Notes
-
-- All historical figures (FY2022–FY2026) are sourced from Star Cement's audited financial statements.
-- Peer/market data is sourced from NSE/BSE filings and Yahoo Finance, current as of the model preparation date.
-- The model uses a blended terminal value (simple average of Gordon Growth and EV/EBITDA exit-multiple methods), discounted via XNPV at WACC.
-- Only the top-line revenue growth assumption differs across the Base/Bull/Bear scenarios; all other operating assumptions are held constant.
+- **DCF Valuation** — Free Cash Flow to Firm (FCFF), discounted at WACC, with two terminal value approaches (Gordon Growth + EV/EBITDA exit multiple, blended)
+- **Comparable Company Analysis (Comps)** — EV/Sales, EV/EBITDA and P/E benchmarked against a 12-peer listed cement universe
+- **WACC Build** — CAPM cost of equity (peer-average unlevered beta, re-levered to Star Cement's capital structure) + after-tax cost of debt
+- **Scenario Analysis** — Base / Bull / Bear revenue-growth cases, sensitized on WACC and exit multiple
+- All data sourced from official sources — Star Cement Annual Reports, shareholding pattern filings, NSE/BSE filings, and Yahoo Finance market data
 
 ---
 
-**Prepared by:** Anuj Patel
-**Last updated:** 11 August 2026
+## 📚 Data Sources
+
+- 🔗 Star Cement Limited — BSE Filings (Script Code: 540575)
+- 🔗 NSE — STARCEMENT
+- 🔗 Star Cement Official Website
+- 📄 Star Cement Annual Report 2024–25
+- 📄 Star Cement Q4 FY26 Investor Presentation
+
+---
+
+## 👤 Prepared By
+
+**Anuj Patel**
+📧 [anuj88349@gmail.com] · 🔗 [https://www.linkedin.com/in/anuj-patel-139043256/]
+
+---
+
+> *Disclaimer: This report is prepared solely for educational and academic purposes as part of a financial modelling exercise. It does not constitute investment advice. All projections and valuations are the result of modelling exercises and should not be relied upon for making investment decisions. Consult a SEBI-registered investment advisor before acting on any information here.*
