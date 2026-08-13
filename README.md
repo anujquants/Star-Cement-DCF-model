@@ -92,22 +92,20 @@ Star Cement Limited (formerly Cement Manufacturing Company Limited, renamed in 2
 - All data sourced from official sources — Star Cement Annual Reports, shareholding pattern filings, NSE/BSE filings, and Yahoo Finance market data
 
 ---
-
 ## 📚 Data Sources
 
-- 🔗 Star Cement Limited — BSE Filings (Script Code: 540575)
-- 🔗 NSE — STARCEMENT
-- 🔗 Star Cement Official Website
-- 📄 Star Cement Annual Report 2024–25
-- 📄 Star Cement Q4 FY26 Investor Presentation
+- 🔗 [Star Cement — BSE Filings](https://www.bseindia.com/stock-share-price/star-cement-ltd/starcement/540575/)
+- 🔗 [NSE — STARCEMENT](https://www.nseindia.com/get-quotes/equity?symbol=STARCEMENT)
+- 🔗 [Star Cement Official Website](https://www.starcement.co.in/)
+- 📄 [Star Cement Annual Reports](https://www.starcement.co.in/annual-report)
+- 📄 [Star Cement Q4 FY26 Investor Presentation](https://www.starcement.co.in/investors-presentation)
 
 ---
 
 ## 👤 Prepared By
 
 **Anuj Patel**
-📧 [anuj88349@gmail.com] · 🔗 [https://www.linkedin.com/in/anuj-patel-139043256/]
 
----
+📧 [anuj88349@gmail.com](mailto:anuj88349@gmail.com) 🔗 [LinkedIn](https://www.linkedin.com/in/anuj-patel-139043256/)
 
 > *Disclaimer: This report is prepared solely for educational and academic purposes as part of a financial modelling exercise. It does not constitute investment advice. All projections and valuations are the result of modelling exercises and should not be relied upon for making investment decisions. Consult a SEBI-registered investment advisor before acting on any information here.*
